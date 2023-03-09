@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+.sub-cont{
+    width: 50%;
+    box-shadow: 0px 5px 10px rgba(0 , 0, 0 , 0.1) ;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sub-cont h1{
+    color: cornflowerblue;
+    margin-bottom: 30px;
+}
+
+form{
+    width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #45a049;
+  font-weight: 600;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgba(76, 175, 80, 0.5);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.success {
+  color: green;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width:992px) {
+    .sub-cont{
+        width: 90%;
+    }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  border: none;
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #45a049;
+  height: 1rem;
+}
